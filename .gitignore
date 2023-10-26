@@ -106,3 +106,6 @@ dist
 .tern-port
 
 src/store/firebase.config.js
+
+.dorky/.credentials
+.dorky/.dorkyhash
