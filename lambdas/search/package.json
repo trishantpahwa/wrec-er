@@ -1,0 +1,24 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "ncc build index.ts",
+    "zip:lambda": "zip -j deploy.zip ./dist/*",
+    "deploy:lambda": "aws lambda update-function-code --function-name=wrec-er_search --zip-file=fileb://deploy.zip",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Trishant Pahwa",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1502.0",
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.129",
+    "@types/node": "^20.10.0",
+    "@vercel/ncc": "^0.38.1"
+  }
+}

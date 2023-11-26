@@ -111,3 +111,5 @@ src/store/firebase.config.js
 .dorky/.dorkyhash
 
 build
+
+deploy.zip
